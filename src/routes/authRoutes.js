@@ -53,7 +53,7 @@ router.post("/login", async (req, res) => {
       maxAge: 3600000, // 1 hour
     });
 
-    res.status(201).json({ message: "User registered successfully" });
+    res.status(201).json({ message: "User logged-in successfully" });
   } catch (error) {
     res.status(500).send("Server error");
   }
